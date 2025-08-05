@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Authenticated, Unauthenticated } from "convex/react";
 import { SignInForm } from "./SignInForm";
 import { SignOutButton } from "./SignOutButton";
@@ -13,28 +13,27 @@ import Skills from './pages/Skills';
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <BrowserRouter basename="/portfolio">
-        <Authenticated>
-          <Navigation />
-          <main className="min-h-screen">
-            <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/education" element={<Education />} />
-              <Route path="/experience" element={<Experience />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/skills" element={<Skills />} />
-            </Routes>
-          </main>
-        </Authenticated>
-        
-        <Unauthenticated>
-          <div className="min-h-screen flex items-center justify-center">
-            <div className="w-full max-w-md mx-auto p-8">
-              <SignInForm />
-            </div>
+      <Authenticated>
+        <Navigation />
+        <main className="min-h-screen">
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+          </Routes>
+        </main>
+      </Authenticated>
+
+      <Unauthenticated>
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="w-full max-w-md mx-auto p-8">
+            <SignInForm />
           </div>
-        </Unauthenticated>
-      </BrowserRouter>
+        </div>
+      </Unauthenticated>
+
       <Toaster />
     </div>
   );
