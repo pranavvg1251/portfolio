@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { SignOutButton } from '../SignOutButton';
+
 
 export default function Navigation() {
   const location = useLocation();
@@ -31,7 +31,6 @@ export default function Navigation() {
               </Link>
             ))}
           </div>
-          <SignOutButton />
         </div>
       </div>
     </nav>

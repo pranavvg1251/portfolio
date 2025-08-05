@@ -64,7 +64,12 @@ export default function Home() {
 
   const handleLinkedInClick = () => {
     // Add your LinkedIn profile link here
-    window.open('https://www.linkedin.com/in/pranav-gangurde/', '_blank');
+    window.open('https://www.linkedin.com/in/pranavv1251/', '_blank');
+  };
+
+  const handleGitClick = () => {
+    // Add your LinkedIn profile link here
+    window.open('https://www.github.com/pranavv1251/', '_blank');
   };
 
   return (
@@ -90,6 +95,12 @@ export default function Home() {
               className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-colors"
             >
               LinkedIn
+            </button>
+            <button
+              onClick={handleGitClick}
+              className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-colors"
+            >
+              GitHub
             </button>
           </div>
         </div>
