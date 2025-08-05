@@ -42,5 +42,5 @@ window.addEventListener('message', async (message) => {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: `/${repoName}/`,
+  base: '/portfolio/',
 }));
