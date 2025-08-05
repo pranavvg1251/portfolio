@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Authenticated, Unauthenticated } from "convex/react";
 import { SignInForm } from "./SignInForm";
 import { SignOutButton } from "./SignOutButton";
@@ -13,7 +13,7 @@ import Skills from './pages/Skills';
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <Router>
+      <BrowserRouter basename="/portfolio">
         <Authenticated>
           <Navigation />
           <main className="min-h-screen">
@@ -30,15 +30,11 @@ export default function App() {
         <Unauthenticated>
           <div className="min-h-screen flex items-center justify-center">
             <div className="w-full max-w-md mx-auto p-8">
-              <div className="text-center mb-8">
-                {/* <h1 className="text-4xl font-bold text-white mb-4">Portfolio</h1>
-                <p className="text-gray-300">Sign in to view the portfolio</p> */}
-              </div>
               <SignInForm />
             </div>
           </div>
         </Unauthenticated>
-      </Router>
+      </BrowserRouter>
       <Toaster />
     </div>
   );
