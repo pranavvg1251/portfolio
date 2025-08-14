@@ -49,12 +49,12 @@ export default function Education() {
     {
       degree: "Master of Science in Computer Science",
       school: "University of Southern California",
-      year: "2023 - 2025",
+      year: "August 2023 - May 2025",
     },
     {
       degree: "Bacelor of Engineering in Information Technology",
       school: "University of Mumbai",
-      year: "2018 - 2022",
+      year: "July 2018 - May 2022",
     },
     
   ];

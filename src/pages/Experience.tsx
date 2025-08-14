@@ -39,7 +39,7 @@ export default function Experience() {
   const experienceData = [
     {
       title: "Software Engineer",
-      company: "Wireless Devices and Systems Group (USC)",
+      company: "Wireless Devices and Systems Lab",
       period: "June 2024 - Present",
       description: "•	Design a scalable data-processing Python pipeline to preprocess 100K+ data points of Wireless InSite simulations\n•	Build and train a deep learning autoencoder using PyTorch and multi-GPU clusters, enabling unsupervised analysis of high-dimensional datasets\n•	Implement an end-to-end CI/CD pipeline with Docker for model deployment, reducing production cycles to <3 day\n•	Devise an automated unit and integration test suite using Docker, pytest, and AWS CodeBuild, accelerating model validation and feedback efficiency",
       technologies: ["React", "TypeScript", "Node.js", "AWS"]

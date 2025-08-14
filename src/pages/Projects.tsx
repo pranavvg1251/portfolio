@@ -56,6 +56,34 @@ function Scene3D() {
 export default function Projects() {
   const projectsData = [
     {
+      title: "Retrieval-Augmented Generation (RAG) System",
+      description: "•	 Developed a Retrieval-Augmented Generation (RAG) pipeline using LangChain, Gemini, HuggingFace embeddings, and a PyTorch-based transformer, achieving 95% accuracy on domain-specific queries\n•	 Accelerated embedding generation with CUDA-optimized PyTorch models, reducing response latency by 60%",
+      technologies: ["Python", "PyTorch", "LangChain", "Gemini"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Drug Classification System",
+      description: "•	 Designed and deployed a drug classification model using scikit-learn and PyTorch, achieving 95% accuracy and 0.94 F1 score through optimized feature selection, model evaluation, and hyperparameter tuning on structured biomedical datasets\n•	 Built an MLOps pipeline integrating GitHub Actions, Gradio, and CML for continuous integration and model deployment",
+      technologies: ["Python", "PyTorch", "NumPy"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Full-Stack Expenses Tracker App",
+      description: "•	 Developed a full-stack web application with a modular React frontend and Node.js + Express backend integrated with GraphQL\n•	 Architected a CI/CD pipeline in Jenkins and Docker for code checkout, build, test, and Docker image publishing to Docker Hub",
+      technologies: ["React", "Node.js", "GraphQL"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Expenses Tracker",
+      description: "•	 Developed a Go-based expense tracker application with features for adding, updating, and summarizing expenses\n•	 Built a CI/CD pipeline with GitHub Actions to automate Docker image builds and push to Docker Hub, streamlining deploymentthrough consistent container image versioning",
+      technologies: ["Go", "Docker", "Github Actions"],
+      github: "#",
+      demo: "#"
+    },
+    {
       title: "Simulation Data Analysis Tool",
       description: "•	Automated data preprocessing and feature extraction pipelines in Python, cutting preparation time by 60% on large datasets\n•	Conducted PyTorch model hyperparameter tuning across 400K+ entries, improving prediction precision and overall model performance",
       technologies: ["Python", "PyTorch", "NumPy"],
